@@ -12,7 +12,7 @@ public class HeaderRequestInterceptor implements RequestInterceptor {
     public void intercept(RequestFacade request) {
         request.addHeader("Accept", "application/vnd.github.v3+json");
 
-        final String credentials = "zsavely" + ":" + "b3cccc15b40d1ba43049a99dc15180f8d482e340";
+        final String credentials = "zsavely" + ":" + "c3260016bf76b4de6a6d24a5bdd66777bbf5eafe";
         String string = "Basic " + Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
         request.addHeader("Authorization", string);
     }

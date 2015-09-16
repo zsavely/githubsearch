@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:showIn="@layout/row_preview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_reponame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_margin="15dp"
+            android:text="@string/app_name"
+            android:textAppearance="@android:style/TextAppearance.Large"/>
+
+        <TextView
+            android:id="@+id/textview_repodescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/app_name"
+            android:textAppearance="@android:style/TextAppearance.Small"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview_forks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="2"
+        android:gravity="center|end"
+        android:text="@string/app_name"
+        android:textSize="24sp"/>
+</LinearLayout>
